@@ -1,0 +1,15 @@
+# App used: https://fullstack-exampleapp.herokuapp.com/spa
+# Kyle G
+
+title 0.5 New Note - SPA
+
+note over browser 
+    User inputs 
+    "The browser can also run..."
+end note
+browser -> server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+server --> browser: Status Code: 201
+note over browser:
+ui updates almost immediately 
+reflecting the new note added
+end note
