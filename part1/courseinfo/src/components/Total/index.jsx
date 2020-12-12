@@ -1,5 +1,8 @@
 import React from 'react'
 
-export default function Total({ exercises1, exercises2, exercises3 }) {
-    return <p> Number of exercises {exercises1 + exercises2 + exercises3}</p>
+export default function Total({ course }) {
+    const { parts } = course;
+    const [part1, part2, part3] = parts;
+
+    return <p> Number of exercises {part1.exercises + part2.exercises + part3.exercises}</p>
 }
